@@ -1,5 +1,5 @@
 import pip as installer
-if not hasattr(pip, "main"):
+if not hasattr(installer, "main"):
   del installer
   import pip._internal as installer
   
