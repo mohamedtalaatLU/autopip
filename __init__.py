@@ -1,10 +1,13 @@
-from pip import main as installer
-if not hasattr(installer, "main"):
-  del pip
-  from pip._internal import main as installer
+import pip as installer
+if not hasattr(pip, "main"):
+  del installer
+  import pip._internal as installer
   
 if __name__ != "__main__":
   try:
     except ModuleNotFoundError:
-      installer(["install", pass])
+      installer.main(["install", pass])
+    
+else :
+  print("this module is for external usage only !")
     
