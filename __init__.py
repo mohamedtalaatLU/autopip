@@ -6,7 +6,7 @@ if not hasattr(pip, "main"):
 if __name__ != "__main__":
   try:
     except ModuleNotFoundError:
-      installer.main(["install", pass])
+      installer.main(["install", pass])#This part is not implemented yet
     
 else :
   print("this module is for external usage only !")
